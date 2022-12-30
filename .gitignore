@@ -1,5 +1,9 @@
 # data folder
-.testdata
+testdata/
+
+# data extensions
+*.dcm
+*.nrrd
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

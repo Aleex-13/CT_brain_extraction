@@ -4,7 +4,9 @@ Script to automatically extract the brain from non-contrast CT scans (3D) using 
 
 How to use it:
 
-1) Install 3D Slicer and the SlicerJupyter extension from the 3D Slicer extension manager (see github repository here: https://github.com/Slicer/SlicerJupyter)
+1) Install 3D Slicer and the following extensions from the 3D Slicer extension manager 
+    - SlicerJupyter (https://github.com/Slicer/SlicerJupyter)
+    - SurfaceWrapSolidify (https://github.com/sebastianandress/Slicer-SurfaceWrapSolidify)
 
 2) I wanted to use Slicer's Python kernel in an external Python environment. 
 
@@ -16,8 +18,9 @@ Then open slicer, search in the Modules for the JupyterKernel and switch to modu
 
 Alternatively you can also start a Jypter server in Slicer Python environment in the module and work there.
 
-3) Start jupyter notebook in your python environment and select the slicer kernel to run the notebook. Set your input and output pahts in the notebook.
+3) Open the notebook with jupyter and set the absolute paths to the input and output directories. (For me only absolute paths worked)
+    - input must be dicom
+    - output is saved as .nrrd
 
-
-
+4) Select the Slicer Kernel and run the notebook.
 
